@@ -25,6 +25,7 @@ html, body {
 }
 
 .heart {
+  z-index: 9999;
   height: 70px;
   width: 70px;
   background: #f20044;
@@ -33,6 +34,7 @@ html, body {
   box-shadow: -10px 10px 90px #f20044;
   animation: heart-beat 1s infinite ease-in-out;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 @keyframes heart-beat {
