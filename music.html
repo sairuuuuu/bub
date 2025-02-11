@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        window.addEventListener("message", function(event) {
+            if (event.data === "startMusic") {
+                document.getElementById("bg-music").play();
+            }
+        });
+    </script>
+</body>
+</html>

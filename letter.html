@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tulip-border">
+        
+        <div class="letter-container hidden">
+            <h1>Hiii bub,</h1>
+            <p>letter helo</p>
+        </div>
+    </div>  
+
+    <script src="script.js"></script>
+
+    <audio id="bg-music" loop>"
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        <window.onload = function (){
+            let music = document.getElementById("bg-music");
+
+            if (localStorage.getItem("isMusicPlaying") === "true") {
+                music.play());
+            }
+        };
+    </script>
+</body>
+</html>
